@@ -1,0 +1,25 @@
+<div>
+    <h1>Lista</h1>
+<table class="table table-striped table-bordered" *ngIf="productos">
+    <thead>
+      <tr>  
+        <th>Núm Solicitud</th>
+        <th>Nombre Cliente</th>
+        <th>Estado</th>
+        <th>Fecha Solicitud</th>
+        <th>Fecha Vigencia</th>
+        <th>Resumen Carga</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let sol of productos">
+        <td>{{sol.idproducto }}</td>
+        <td>{{sol.usuario }}</td>
+        <td>{{sol.nombre }}</td>
+        <td>{{sol.cantidad }}</td>
+        <td>{{sol.fecha }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
